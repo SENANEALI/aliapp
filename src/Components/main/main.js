@@ -1,12 +1,9 @@
-import React from 'react';
 
 import "../../Assets/css/index.css";
-import { Link } from 'react-router-dom';
-import Logo from '../../Assets/img/logo.png';
 
-function Header(){
+function Main(){
     return (
-        <header className='Header'>
+        <header className="sub-header">
             <Link className='Link' to={"/"}><img src={Logo} alt="Logo du site" /></Link>
             <nav>
                 <Link to={"serveur-mutualise"}>
@@ -28,7 +25,7 @@ function Header(){
 
             </nav>
         </header>
-    );
+    )
 }
+    
 
-export default Header;

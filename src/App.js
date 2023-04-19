@@ -1,5 +1,5 @@
 
-import './App.css';
+import './Assets/css/App.css';
 import { Routes, Route } from "react-router-dom";
 import Mutualise from "./Pages/mutualise/Mutualise.js";
 import Cloud from "./Pages/cloud/Cloud.js";
@@ -12,11 +12,11 @@ import Header from "./Components/header/Header.js";
 
 function App() {
   return (
-    <>
-      <body>
+    
+      <>
 
-        <Header />
-      </body>
+      <Header />
+      
               
       <Routes>
           <Route path={"/"} element={<Home />} />
@@ -25,7 +25,11 @@ function App() {
           <Route path={"solution-cloud"} element={<Cloud />} />
           <Route path={"contact"} element={<Contact />} />
       </Routes>
-    </>
+
+      
+      </>
+      
+    
   );
 }
 
